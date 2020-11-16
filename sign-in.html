@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In | Kerala Tourism</title>
+
+    <!-- Bootstrap link -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/sign-in.css" />
+
+</head>
+
+<body>
+    <!-- navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html">
+                <img src="./images/logo.jpg" width="50" height="50" class="d-inline-block align-top" alt="logo" loading="lazy" />
+                Kerala Tourism
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="/index.html">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <button class="btn btn-primary sign-in-btn ml-3 font-weight-bold">
+                        <a href="/sign-up.html" class="text-decoration-none text-white">Sign Up</a>
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main content -->
+    <div class="content">
+        <div class="container sign-in-box shadow">
+            <h1 class="title text-center font-weight-bold">Sign In</h1>
+            <form action="/index.html" onsubmit="return !!  (validateEmail() & validatePassword());">
+                <label for="username" class="username-label h4">Email Id</label><br />
+                <input type="email" class="username" placeholder="Email Id" id="username"  required="" /><br />
+                <p id="user-error"></p>
+                <label for="password" class="password-label h4">Password </label><br />
+                <input type="password" class="password" placeholder="Password" id="password" required="" /><br />
+                <p id="password-error"></p>
+                <button type="submit" class="btn btn-lg btn-success my-3 sign-in-btn">
+                    Sign In</button><br />
+                <a href="#" class="btn btn-sm btn-danger mb-3 forgot-btn">Forgot Password</a><br />
+                <a href="sign-up.html" class="create-account h3 text-decoration-none font-weight-bold text-dark">Create
+                    an Account</a><br />
+            </form>
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <footer class="text-center h6 mx-auto"><hr>
+        <p>Underdevelopment | Copyright 2020</p>
+    </footer>
+            <!-- javascript -->
+            <script src="/Sign-In.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-black {
+    background-color: rgb(36, 35, 35);
+}
+.sign-in-box {
+    margin: auto;
+    margin-top: 5vh;
+    padding: 50px;
+    width: 450px;
+    height: 500px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: rgba(39, 117, 190, 0.2);
+}
+label {
+    margin-top: 20px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-weight: bold;
+}
+input {
+    width: 350px;
+    padding: 5px;
+    border: 2px rgba(0, 0, 0, 0.2) solid;
+    border-radius: 7px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+input:hover {
+    border: 2px solid purple;
+}
+input:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+}

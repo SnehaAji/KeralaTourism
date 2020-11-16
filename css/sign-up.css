@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-black {
+    background-color: rgb(36, 35, 35);
+}
+.sign-up-box {
+    margin: auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding: 50px;
+    width: 450px;
+    /* height: 630px; */
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: rgba(39, 117, 190, 0.2);
+}
+label {
+    margin-top: 10px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-weight: bold;
+}
+input {
+    width: 350px;
+    padding: 5px;
+    border: 2px rgba(0, 0, 0, 0.2) solid;
+    border-radius: 7px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+input:hover {
+    border: 2px solid purple;
+}
+input:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+form p{
+    font-size: 80%;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding-left: 10px;
+}
